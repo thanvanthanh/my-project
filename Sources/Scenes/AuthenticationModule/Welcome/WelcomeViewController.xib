@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WelcomeViewController" customModule="my_project_ios" customModuleProvider="target">
+            <connections>
+                <outlet property="backgroundImage" destination="4TA-6R-I53" id="gDo-GR-T4n"/>
+                <outlet property="loginButton" destination="V6p-ma-1mn" id="GIc-A1-76w"/>
+                <outlet property="registerButton" destination="mLC-CL-geK" id="nOP-I3-YHk"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4TA-6R-I53">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="4HO-4M-ReA">
+                    <rect key="frame" x="22" y="59" width="349" height="759"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MXT-7A-1jT">
+                            <rect key="frame" x="0.0" y="0.0" width="349" height="617"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V6p-ma-1mn">
+                            <rect key="frame" x="0.0" y="632" width="349" height="56"/>
+                            <color key="backgroundColor" name="common_dark"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="56" id="Egg-6b-EIe"/>
+                            </constraints>
+                            <color key="tintColor" name="common_white"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Login">
+                                <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="16"/>
+                            </buttonConfiguration>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" name="common_white"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="loginAction:" destination="-1" eventType="touchUpInside" id="8zV-Ji-Yhd"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mLC-CL-geK">
+                            <rect key="frame" x="0.0" y="703" width="349" height="56"/>
+                            <color key="backgroundColor" name="common_white"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="56" id="7aw-GQ-Y5G"/>
+                            </constraints>
+                            <color key="tintColor" name="common_dark"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Register">
+                                <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="16"/>
+                            </buttonConfiguration>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" name="common_dark"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="registerAction:" destination="-1" eventType="touchUpInside" id="OUX-Py-r1C"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="4TA-6R-I53" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="0Iv-ko-d8B"/>
+                <constraint firstItem="4HO-4M-ReA" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="AxM-nS-UyA"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="4HO-4M-ReA" secondAttribute="bottom" id="Cv4-hY-hsF"/>
+                <constraint firstItem="4HO-4M-ReA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="22" id="Cvz-S1-bAp"/>
+                <constraint firstAttribute="trailing" secondItem="4TA-6R-I53" secondAttribute="trailing" id="RsU-yB-0nq"/>
+                <constraint firstAttribute="bottom" secondItem="4TA-6R-I53" secondAttribute="bottom" id="efu-ix-hYW"/>
+                <constraint firstItem="4TA-6R-I53" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="l2D-nS-URc"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="4HO-4M-ReA" secondAttribute="trailing" constant="22" id="uPp-Qh-YuL"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="-11"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="common_dark">
+            <color red="0.12" green="0.14000000000000001" blue="0.17000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="common_white">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
